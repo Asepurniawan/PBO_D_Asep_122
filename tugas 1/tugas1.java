@@ -6,7 +6,7 @@ public class tugas1 {
         String Username = "Asep";
         String Password = "122";
         String Nama = "Asep Kurniawan";
-        String NIM = "202410370110122"; // Menggunakan String untuk NIM
+        String NIM = "202410370110122";
 
         Scanner objInput = new Scanner(System.in);
 
@@ -15,7 +15,7 @@ public class tugas1 {
         System.out.println("2. Mahasiswa");
         System.out.print("Pilih opsi anda (1/2): ");
         pilihan = objInput.nextInt();
-        objInput.nextLine(); // Membersihkan newline
+        objInput.nextLine();
 
         switch (pilihan) {
             case 1:
@@ -35,7 +35,7 @@ public class tugas1 {
                 System.out.print("Masukkan Nama: ");
                 String nama = objInput.nextLine();
                 System.out.print("Masukkan NIM: ");
-                String nim = objInput.nextLine(); // Menggunakan nextLine untuk NIM
+                String nim = objInput.nextLine();
 
                 if (nama.equals(Nama) && nim.equals(NIM)) {
                     System.out.println("Login Mahasiswa Berhasil!");
