@@ -25,7 +25,7 @@ public class Admin extends User implements AdminActions {
             System.out.println("\n== Menu Admin ==");
             System.out.println("1. Kelola Laporan Barang");
             System.out.println("2. Kelola Data Mahasiswa");
-            System.out.println("0. Logout");
+            System.out.println("3. Logout");
             System.out.print("Pilih menu: ");
             choice = scanner.nextInt();
             scanner.nextLine(); 
@@ -33,7 +33,7 @@ public class Admin extends User implements AdminActions {
             switch (choice) {
                 case 1 -> manageItems();
                 case 2 -> manageUsers();
-                case 0 -> System.out.println("Logout berhasil.");
+                case 3 -> System.out.println("Logout berhasil.");
                 default -> System.out.println("Pilihan tidak valid.");
             }
         } while (choice != 0);
