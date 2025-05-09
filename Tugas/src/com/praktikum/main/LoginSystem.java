@@ -10,8 +10,8 @@ public class LoginSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Admin admin = new Admin("Admin148", "ADM001", "admin148", "admin148");
-        Mahasiswa mahasiswa = new Mahasiswa("Rayhan Amrullah", "202410370110148");
+        Admin admin = new Admin("", "", "admin122", "admin122");
+        Mahasiswa mahasiswa = new Mahasiswa("Asep Kurniawan", "202410370110122");
 
         System.out.println("== SISTEM LOGIN ==");
         System.out.println("1. Admin");
