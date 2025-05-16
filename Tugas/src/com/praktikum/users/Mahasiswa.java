@@ -5,7 +5,7 @@ import com.praktikum.actions.MahasiswaActions;
 import java.util.Scanner;
 
 public class Mahasiswa extends User implements MahasiswaActions {
-    private final Scanner scanner; // Declare a single Scanner instance
+    private  Scanner scanner; // Declare a single Scanner instance
 
     public Mahasiswa(String nama, String nim) {
         super(nama, nim);
@@ -24,7 +24,7 @@ public class Mahasiswa extends User implements MahasiswaActions {
             System.out.println("\n== Menu Mahasiswa ==");
             System.out.println("1. Laporkan Barang Temuan/Hilang");
             System.out.println("2. Lihat Daftar Laporan");
-            System.out.println("0. Logout");
+            System.out.println("3. Logout");
             System.out.print("Pilih menu: ");
             pilihan = scanner.nextInt();
             scanner.nextLine(); // Consume newline
@@ -32,7 +32,7 @@ public class Mahasiswa extends User implements MahasiswaActions {
             switch (pilihan) {
                 case 1 -> reportItem();
                 case 2 -> viewReportedItems();
-                case 0 -> System.out.println("Logout berhasil.");
+                case 3 -> System.out.println("Logout berhasil.");
                 default -> System.out.println("Pilihan tidak valid.");
             }
         } while (pilihan != 0);

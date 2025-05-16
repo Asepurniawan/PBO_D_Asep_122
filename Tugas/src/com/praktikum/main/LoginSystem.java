@@ -1,8 +1,7 @@
 package com.praktikum.main;
 
-import com.praktikum.users.Admin;
-import com.praktikum.users.Mahasiswa;
-import com.praktikum.users.User;
+import com.praktikum.users.*;
+
 
 import java.util.Scanner;
 
@@ -10,7 +9,7 @@ public class LoginSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Admin admin = new Admin("", "", "admin122", "admin122");
+        User admin = new Admin("", "", "admin122", "admin122");
         Mahasiswa mahasiswa = new Mahasiswa("Asep Kurniawan", "202410370110122");
 
         System.out.println("== SISTEM LOGIN ==");
