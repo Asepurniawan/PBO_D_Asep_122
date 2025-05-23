@@ -6,9 +6,9 @@ public class ManajemenStok {
     public static void main(String[] args) {
         ArrayList<Barang> daftarBarang = new ArrayList<>();
         // Data awal untuk pengujian
-        daftarBarang.add(new Barang("Pensil", 50));
-        daftarBarang.add(new Barang("Buku", 30));
-        daftarBarang.add(new Barang("Penghapus", 20));
+        daftarBarang.add(new Barang("Pensil", 100));
+        daftarBarang.add(new Barang("Buku", 100));
+        daftarBarang.add(new Barang("Penghapus", 100));
 
         Scanner scanner = new Scanner(System.in);
 
@@ -50,7 +50,7 @@ public class ManajemenStok {
                     System.out.println("Stok barang kosong.");
                 } else {
                     System.out.println("--- Daftar Barang ---");
-                    for (int i = 0; i < daftarBarang.size(); i++) {
+                    for (int i = 1; i < daftarBarang.size(); i++) {
                         Barang b = daftarBarang.get(i);
                         System.out.println(i + ". Nama: " + b.getNama() + ", Stok: " + b.getStok());
                     }
@@ -86,6 +86,7 @@ public class ManajemenStok {
                 } catch (IndexOutOfBoundsException e) {
                     System.out.println("Nomor indeks barang tidak valid!");
                 } catch (StokTidakCukupException e) {
+                    System.out.println("tytyty");
                     System.out.println(e.getMessage());
                 }
             } else if (opsi == 0) {
