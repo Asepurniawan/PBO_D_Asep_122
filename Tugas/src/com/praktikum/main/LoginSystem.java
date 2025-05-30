@@ -13,7 +13,8 @@ public class LoginSystem {
 
         userList.add(new Admin("Asep Kurniawan", "202410370110122", "admin122", "admin122"));
         userList.add(new Mahasiswa("Asep Kurniawan", "202410370110122"));
-        userList.add(new Mahasiswa("Ivan Nuryanto", "202410370110146"));
+        userList.add(new Mahasiswa("Ivan Nuryanto", "202410370110156"));
+        userList.add(new Mahasiswa("Rizki Maulana", "202410370110123"));
 
         User user = null;
         while (user == null) {
